@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of Your Name – student, developer, and lifelong learner." />
+  <title>Your Name | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Your<span>Name</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navMenu">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </header>
+
+  <main>
+
+    <!-- ============ HOME ============ -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Your Full Name</h1>
+        <h2 class="typing">I'm a <span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="tagline">Turning ideas into clean, useful, and friendly web experiences.</p>
+        <p class="intro">
+          I'm a [Your Course / Year Level] student passionate about web development and problem solving.
+          Welcome to my portfolio – take a look at what I've built and learned so far.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Replace images/profile.png with your own photo if needed. -->
+        <img src="images/profile.png" alt="Portrait of Your Name" />
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Hi! I'm <strong>Your Full Name</strong>, a [Your Course] student at [Your School].
+            Write 2–3 sentences here about who you are, what motivates you, and what you enjoy
+            doing outside of school (hobbies, interests, goals).
+          </p>
+          <p>
+            My goal is to become a [Your Career Goal] who builds reliable, user-friendly software
+            that makes people's lives easier.
+          </p>
+          <ul class="info-list">
+            <li><strong>Name:</strong> Your Full Name</li>
+            <li><strong>Course:</strong> [Your Course]</li>
+            <li><strong>Interests:</strong> Web Development, Design, [Add More]</li>
+          </ul>
+        </div>
+
+        <div class="timeline reveal">
+          <h3>Educational Background</h3>
+          <div class="timeline-item">
+            <span class="year">2024 – Present</span>
+            <h4>Bachelor of Science in [Your Course]</h4>
+            <p>[Your University / College]</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2022 – 2024</span>
+            <h4>Senior High School – [Your Strand]</h4>
+            <p>[Your Senior High School]</p>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2018 – 2022</span>
+            <h4>Junior High School</h4>
+            <p>[Your Junior High School]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section alt">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <h3>💻 Programming &amp; Web</h3>
+          <div class="skill"><div class="skill-head"><span>HTML5</span><span>90%</span></div><div class="bar"><div class="fill" data-width="90"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>CSS3</span><span>85%</span></div><div class="bar"><div class="fill" data-width="85"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>JavaScript</span><span>75%</span></div><div class="bar"><div class="fill" data-width="75"></div></div></div>
+          <div class="skill"><div class="skill-head"><span>Python</span><span>70%</span></div><div class="bar"><div class="fill" data-width="70"></div></div></div>
+        </div>
+        <div class="skill-card reveal">
+          <h3>🛠️ Tools &amp; Technologies</h3>
+          <div class="chips">
+            <span>Git &amp; GitHub</span><span>VS Code</span><span>Vercel</span><span>Figma</span>
+            <span>MySQL</span><span>Responsive Design</span><span>Command Line</span>
+          </div>
+          <h3 class="mt">🤝 Soft Skills</h3>
+          <div class="chips">
+            <span>Problem Solving</span><span>Teamwork</span><span>Communication</span>
+            <span>Time Management</span><span>Fast Learner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Project One Title</h3>
+            <p>Short description: what it does, who it's for, and what you learned building it.</p>
+            <div class="chips small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Project Two Title</h3>
+            <p>Short description: describe the problem you solved and the technologies you used.</p>
+            <div class="chips small"><span>Python</span><span>MySQL</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-body">
+            <h3>Project Three Title</h3>
+            <p>Short description: a class activity, group project, or personal side project works too.</p>
+            <div class="chips small"><span>HTML</span><span>Bootstrap</span></div>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live Demo</a>
+              <a href="#" target="_blank" rel="noopener">Source Code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section alt">
+      <h2 class="section-title">Achievements</h2>
+      <div class="ach-grid">
+        <div class="ach-card reveal">
+          <span class="ach-icon">🏆</span>
+          <h3>Dean's Lister</h3>
+          <p>[School Year / Semester] – [Your School]</p>
+        </div>
+        <div class="ach-card reveal">
+          <span class="ach-icon">📜</span>
+          <h3>Certificate – [Course Name]</h3>
+          <p>[Issuer, e.g., freeCodeCamp / Coursera] – [Year]</p>
+        </div>
+        <div class="ach-card reveal">
+          <span class="ach-icon">🎤</span>
+          <h3>Seminar / Workshop Attended</h3>
+          <p>[Event Title] – [Organizer], [Year]</p>
+        </div>
+        <div class="ach-card reveal">
+          <span class="ach-icon">🥇</span>
+          <h3>Competition / Award</h3>
+          <p>[Award Title] – [Event], [Year]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Let's connect!</h3>
+          <p>Have a question or want to work together? Send me a message.</p>
+          <ul>
+            <li>📧 <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>🐙 <a href="https://github.com/your-username" target="_blank" rel="noopener">github.com/your-username</a></li>
+            <li>💼 <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">linkedin.com/in/your-profile</a></li>
+            <li>📘 <a href="https://facebook.com/your-profile" target="_blank" rel="noopener">facebook.com/your-profile</a></li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <p class="form-note" id="formNote" role="status"></p>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Your Full Name. All rights reserved.</p>
+    <a href="#home" class="to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
