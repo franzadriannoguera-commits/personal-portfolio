@@ -73,30 +73,5 @@ const spy = new IntersectionObserver(
 );
 sections.forEach((s) => spy.observe(s));
 
-// ===== Contact form (opens the visitor's email app) =====
-const form = document.getElementById("contactForm");
-const note = document.getElementById("formNote");
-const MY_EMAIL = "your.email@example.com"; // <-- change this to your real email
-
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const name = form.name.value.trim();
-  const email = form.email.value.trim();
-  const message = form.message.value.trim();
-  const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-
-  if (!name || !message || !valid) {
-    note.textContent = "Please fill in all fields with a valid email.";
-    note.className = "form-note error";
-    return;
-  }
-  const subject = encodeURIComponent("Portfolio message from " + name);
-  const body = encodeURIComponent(message + "\n\n— " + name + " (" + email + ")");
-  window.location.href = `mailto:${MY_EMAIL}?subject=${subject}&body=${body}`;
-  note.textContent = "Opening your email app…";
-  note.className = "form-note ok";
-  form.reset();
-});
-
 // ===== Footer year =====
 document.getElementById("year").textContent = new Date().getFullYear();
